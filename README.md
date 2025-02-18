@@ -46,7 +46,9 @@ This project implements a Slack bot that uses Large Language Models (LLMs) to un
 
 ## Running the Bot
 
-1. Start the bot:
+### Slack Interface
+
+1. Start the Slack bot:
    ```bash
    python slack.py
    ```
@@ -61,6 +63,33 @@ This project implements a Slack bot that uses Large Language Models (LLMs) to un
    - Mentioning it in a channel: `@YourBot hello`
    - The bot will respond in a thread
    - All subsequent messages in the thread will be processed by the bot
+
+### CLI Interface (Local Testing)
+
+The project includes a CLI interface specifically designed for local testing and development:
+
+1. Start the CLI interface:
+   ```bash
+   python cli.py
+   ```
+
+2. This testing interface provides:
+   - Local interaction without needing Slack
+   - Quick testing of new tools and features
+   - Direct feedback for development
+   - Tool approval workflow testing
+   - Command history for repeated testing scenarios
+
+3. Testing commands:
+   - `help`: Show available commands
+   - `exit` or `quit`: End the session
+   - Any other input will be processed by the AI assistant
+
+The CLI interface is particularly useful for:
+- Developing and testing new tools
+- Debugging tool approval workflows
+- Verifying AI responses locally
+- Quick iterations during development
 
 ## Project Structure
 
